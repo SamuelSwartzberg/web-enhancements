@@ -1,0 +1,47 @@
+/* Change the highlight color on scribd.com */
+
+.highlight.highlight_highlight.selected{
+    background-color: #ff0;
+}
+.highlight.highlight_highlight{
+    background-color: #ffeb3b;
+}
+
+/* Adds highlight classes that I then can use around the web */
+
+.highlight-sam-yellow{
+	background-color: yellow !important;
+}
+.highlight-sam-grey{
+	background-color: #aaa !important;
+}
+
+/* marks imabi lessons as completely flashcardified */
+
+a[href*=shikahoka]::before,
+a[href*=theparticleyori]::before,
+a[href*=apologizing]::before,
+a[href*=thanks]::before,
+a[href*=onomatopoeia]::before,
+a[href*=onomatopoeiaii]::before,
+a[href*=onomatopoeiaiii]::before,
+a[href*=rentaishi]::before,
+a[href*=pluralization]::before,
+a[href*=tachi]::before{
+  content: "✅";
+}
+
+/* marks kanshudo articles as completely flashcardified */
+
+a[href*="/より"]::before,
+a[href*="のほうが"]::before,
+a[href*="というより"]::before,
+a[href*="例の"]::before,
+a[href*="ないで済む"]::before,
+a[href*="/ら?"]::before,
+a[href*="%E3%81%A8%E3%81%84%E3%81%86%E3%82%88%E3%82%8A?oq=%E3%82%88%E3%82%8A"]::before,
+a[href*="%E3%81%AE%E3%81%BB%E3%81%86%E3%81%8C?oq=%E3%82%88%E3%82%8A"]::before,
+a[href*="%E5%87%BA%E3%81%99?oq=stem%20%E5%87%BA%E3%81%99"]::before,
+a[href*="%E3%81%AA%E3%81%84%E3%81%A7%E6%B8%88%E3%82%80?oq=%E6%B8%88%E3%82%80"]::before{
+  content: "✅";
+}
