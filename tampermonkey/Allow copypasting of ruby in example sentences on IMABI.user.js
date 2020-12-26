@@ -1,20 +1,25 @@
-// Some other site
+// ==UserScript==
+// @name         Allow copypasting of ruby in example sentences on IMABI
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://www.imabi.net/*
+// @grant        none
+// ==/UserScript==
 
-function getParentUntil(node, searchNode) {
-    var parent = node.parentNode;
-    if (parent.tagName ==="TR") {
-        return parent;
-    } else {
-        return getParentUntilTr(parent);
-    }
-}
+(function() {
+    'use strict';
+
+    // Some other site
+
 function trimTags(htmlString){
     console.log(htmlString.innerHTML);
     var tempString = htmlString.innerHTML.replace(new RegExp("</?[abcdefghijklmopqstuvwxyz].*?>", "gim"), "");
     tempString = tempString.replace(new RegExp("/n", "gim"), "");
     return tempString;
 }
-prompt("copy", trimTags(getParentUntilTr(window.getSelection().baseNode)));
+prompt("copy", trimTags(window.getSelection().baseNode.closest("tr")));
 
 // IMABI
 
@@ -30,3 +35,5 @@ var copyinterval = window.setInterval(()=>{
 
   });
 }, 100)
+
+})();

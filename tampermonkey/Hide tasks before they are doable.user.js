@@ -16,6 +16,8 @@
     window.deferDebugger ={};
     window.setInterval(hideDeferred, 350);
     function hideDeferred() {
+        document.querySelectorAll(".yzifAd").forEach(item => item.innerHTML = item.textContent.includes("💪") ? "💪" : item.innerHTML); //remove text from workout tasks so they appear less annoying
+
         let hideableArray = Array.from(document.querySelectorAll('.ynRLnc')).filter(el => {
             if (el && el.childNodes && el.childNodes[0] && el.childNodes[0].nodeName === "#text" && el.childNodes[0].textContent){
                 return el.childNodes[0].textContent.includes('hbf');
@@ -29,8 +31,10 @@
             if (!window.deferDebugger[taskName]) window.deferDebugger[taskName] = {};
             let commaValueArray = textArray[1].split(","); //The first element will contain our hbf, the last two our date values
             if (!commaValueArray[1]) continue; // There are no commas to split, we're in the wrong span
+            if(commaValueArray[commaValueArray.length-3] === " Done"){
+              window.getFirstParentThatMatchesSelector(spanElement, 'div').style.display = "none";
+            }
             let durationString = commaValueArray[0].match(/^\d+\w?/g); // duration comes directly after hbf
-            console.log(taskName + ":" + durationString);
             window.deferDebugger[taskName].durationString=durationString;
             if (Array.isArray(durationString)) durationString = durationString[0];
             window.deferDebugger[taskName].durationString=durationString;
