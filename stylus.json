@@ -1,0 +1,255 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1608583157407,
+		"name": "stylish",
+		"sections": [
+			{
+				"code": "/* Change the highlight color on scribd.com */\n\n.highlight.highlight_highlight.selected{\n    background-color: #ff0;\n}\n.highlight.highlight_highlight{\n    background-color: #ffeb3b;\n}\n\n/* Adds highlight classes that I then can use around the web */\n\n.highlight-sam-yellow{\n\tbackground-color: yellow !important;\n}\n.highlight-sam-grey{\n\tbackground-color: #aaa !important;\n}\n\n/* marks imabi lessons as completely flashcardified */\n\na[href*=\"https://www.imabi.net/shikahoka\"],\na[href*=\"https://www.imabi.net/theparticleyori\"],\na[href*=\"https://www.imabi.net/apologizing\"],\na[href*=\"https://www.imabi.net/thanks\"],\na[href*=\"https://www.imabi.net/onomatopoeia\"],\na[href*=\"https://www.imabi.net/onomatopoeiaii\"],\na[href*=\"https://www.imabi.net/onomatopoeiaiii\"],\na[href*=\"https://www.imabi.net/pluralization\"],\na[href*=\"https://www.imabi.net/rentaishi\"],\na[href*=\"https://www.imabi.net/tachi\"],\na[href*=\"https://www.imabi.net/iadverbialnouns\"],\na[href*=\"https://www.imabi.net/theparticletari\"],\na[href*=\"https://www.imabi.net/tokanadonanka\"],\na[href*=\"https://www.imabi.net/nante\"],\na[href*=\"https://www.imabi.net/theparticleya\"],\na[href*=\"https://www.imabi.net/theparticleshi\"],\na[href*=\"https://www.imabi.net/adjectivesii\"],\na[href*=\"https://www.imabi.net/adjectivesiiinavsno.htm\"],\na[href*=\"https://www.imabi.net/adjectives.htm\"],\na[href*=\"https://www.imabi.net/ooisukunai.htm\"],\na[href*=\"https://www.imabi.net/pronunciationi.htm\"],\na[href*=\"https://www.imabi.net/pronunciationii.htm\"],\na[href*=\"https://www.imabi.net/hiragana.htm\"],\na[href*=\"https://www.imabi.net/katakana.htm\"],\na[href*=\"https://www.imabi.net/spellingissues.htm\"],\na[href*=\"https://www.imabi.net/kanjiintro.htm\"],\na[href*=\"https://www.imabi.net/spellingissues.htm\"],\na[href*=\"https://www.imabi.net/kanjiintroii.htm\"],\na[href*=\"https://www.imabi.net/10majoraspects.htm\"],\na[href*=\"https://www.imabi.net/nounsandpronouns.htm\"],\na[href*=\"https://www.imabi.net/copularsentencesi.htm\"],\na[href*=\"https://www.imabi.net/copularsentencesii.htm\"],\na[href*=\"https://www.imabi.net/theparticlewoi.htm\"],\na[href*=\"https://www.imabi.net/regularverbsi.htm\"],\na[href*=\"https://www.imabi.net/regularverbsii.htm\"],\na[href*=\"https://www.imabi.net/theparticleka.htm\"],\na[href*=\"https://www.imabi.net/irregularverbs.htm\"],\na[href*=\"https://www.imabi.net/theparticlekaii.htm\"],\na[href*=\"https://www.imabi.net/theparticlegaii.htm\"],\na[href*=\"https://www.imabi.net/theparticlemo.htm\"],\na[href*=\"https://www.imabi.net/kosoadoi.htm\"],\na[href*=\"https://www.imabi.net/kosoadoiiherethere.htm\"],\na[href*=\"https://www.imabi.net/essentialphrases.htm\"],\na[href*=\"https://www.imabi.net/yesphrases.htm\"],\na[href*=\"https://www.imabi.net/nophrases.htm\"],\na[href*=\"https://www.imabi.net/theparticlete.htm\"],\na[href*=\"https://www.imabi.net/numbersi.htm\"],\na[href*=\"https://www.imabi.net/countersi.htm\"],\na[href*=\"https://www.imabi.net/countersiikovstsu.htm\"],\na[href*=\"https://www.imabi.net/theparticleno.htm\"],\na[href*=\"https://www.imabi.net/theparticleni.htm\"],\na[href*=\"https://www.imabi.net/theparticlee.htm\"],\na[href*=\"https://www.imabi.net/theparticlede.htm\"],\na[href*=\"https://www.imabi.net/thefinalparticlete.htm\"],\na[href*=\"https://www.imabi.net/aruiru.htm\"]\n{\n  background-color: #cfa;\n}\n\na[href*=\"https://www.imabi.net/theparticlegai.htm\"]::before,\na[href*=\"https://www.imabi.net/theparticlewai.htm\"]::before{\n    content: \"☑️\";\n}\n\n\n/* marks kanshudo articles as completely flashcardified */\n\na[href*=\"/より\"]::before,\na[href*=\"のほうが\"]::before,\na[href*=\"というより\"]::before,\na[href*=\"例の\"]::before,\na[href*=\"ないで済む\"]::before,\na[href*=\"/ら?\"]::before,\na[href*=\"/たり?\"]::before,\na[href*=\"/とか?\"]::before,\na[href*=\"/など?\"]::before,\na[href*=\"/なんて?\"]::before,\na[href*=\"/切る?\"]::before,\na[href*=\"/きれない?\"]::before,\na[href*=\"/し_form?\"]::before,\na[href*=\"/や?\"]::before,\na[href*=\"/し?\"]::before,\na[href*=\"/の_adjectives?\"]::before,\na[href*=\"/adjectives?\"]::before,\na[href*=\"/する?\"]::before\n{\n  content: \"✅\";\n}\n\n\na[href*=\"https://myanimelist.net/anime/32281/Kimi_no_Na_wa\"]::before,\na[href*=\"https://myanimelist.net/anime/28851/Koe_no_Katachi\"]::before,\na[href*=\"https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso\"]::before,\na[href*=\"https://myanimelist.net/anime/10408/Hotarubi_no_Mori_e\"]::before,\na[href*=\"https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai\"]::before,\na[href*=\"Suzumiya_Haruhi\"]::before,\na[href*=\"Kenpuu_Denki_Berserk\"]::before,\na[href*=\"Shouwa_Genroku_Rakugo_Shinjuu\"]::before,\na[href*=\"Tenki_no_Ko\"]::before,\na[href*=\"https://myanimelist.net/anime/5941/Cross_Game\"]::before,\na[href*=\"Hibike_Euphonium\"]::before,\na[href*=\"Yahari_Ore_no_Seishun_Love_Comedy\"]::before,\na[href*=\"Toradora\"]::before,\na[href*=\"ReLIFE\"]::before,\na[href*=\"Code_Geass\"]::before,\na[href*=\"https://myanimelist.net/anime/34636/Ballroom_e_Youkoso\"]::before,\na[href*=\"Liz_to_Aoi_Tori\"]::before,\na[href*=\"Kimi_no_Suizou_wo_Tabetai\"]::before,\na[href*=\"Fullmetal_Alchemist__Brotherhood\"]::before,\na[href*=\"Shingeki_no_Kyojin\"]::before,\na[href*=\"3-gatsu_no_Lion\"]::before,\na[href*=\"Saiki_Kusuo\"]::before,\na[href*=\"https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei\"]::before,\na[href*=\"Kara_no_Kyoukai\"]::before,\na[href*=\"Ookami_to_Koushinryou\"]::before,\na[href*=\"Sakamichi_no_Apollon\"]::before,\na[href*=\"Bakemonogatari\"]::before,\na[href*=\"NHK_ni_Youkoso\"]::before,\na[href*=\"Doukyuusei\"]::before,\na[href*=\"Given\"]::before,\na[href*=\"Nodame_Cantabile\"]::before,\na[href*=\"Hachimitsu_to_Clover\"]::before,\na[href*=\"Sennen_Joyuu\"]::before,\na[href*=\"Little_Busters\"]::before\n{\n  content: \"✅\";\n}\n\na[href*=\"https://myanimelist.net/anime/4181/Clannad__After_Story\"]::before,\na[href*=\"Monogatari_Series\"]::before,\na[href*=\"Haikyuu\"]::before,\na[href*=\"https://myanimelist.net/anime/40776/Haikyuu__To_the_Top_2nd_Season\"]::before,\na[href*=\"https://myanimelist.net/anime/36862/Made_in_Abyss_Movie_3__Fukaki_Tamashii_no_Reimei\"]::before,\na[href*=\"https://myanimelist.net/anime/37987/Violet_Evergarden_Movie\"]::before,\na[href*=\"https://myanimelist.net/anime/30654/Ansatsu_Kyoushitsu_2nd_Season\"]::before,\na[href*=\"Saenai_Heroine\"]::before,\na[href*=\"https://myanimelist.net/anime/32935/Haikyuu__Karasuno_Koukou_vs_Shiratorizawa_Gakuen_Koukou\"]::before,\na[href*=\"Fruits_Basket\"]::before,\na[href*=\"Kono_Oto_\"]::before,\na[href*=\"Bakuman\"]::before\n{\n  content: \"☑️\";\n}\n\na[href*=\"/channel/UCMmaBzfCCwZ2KqaBJjkj0fw\"],\na[href*=\"/channel/UCCGvq-qmjFmmMD4e-PLQqGg\"]{\n    background-color: #900;\n}\n\n.learn-done{\n    background-color: #f0ffee;\n}\n\n#iframe-popup{\n    position: absolute;\ntop: 200px;\nleft: 200px;\nborder: .1em solid #0003;\nborder-radius: 1em;\nbox-shadow: 0 1em 3em #0003;\n    background-color: white;\n}\n"
+			}
+		],
+		"updateDate": 1610366765567,
+		"_id": "f16c284e-5615-4906-b4b3-0c9acbddcbe0",
+		"_rev": 1610366765567,
+		"id": 1
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1609267912118,
+		"name": "jisho.org",
+		"sections": [
+			{
+				"code": "body > header.row{\n    display:none;\n}\n.row{\n    max-width: 85em;\n}\nhtml{\n    font-size: 0.8em;\n}",
+				"urlPrefixes": [
+					"https://jisho.org/"
+				]
+			}
+		],
+		"updateDate": 1610474905158,
+		"_id": "b15ba78f-c7ea-4feb-b704-25e296326527",
+		"_rev": 1610474905158,
+		"id": 2
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1609268100614,
+		"name": "www.imabi.net/*",
+		"sections": [
+			{
+				"code": "body{\n    line-height: 1.5;\n}\n.tealditDotComNewBarNotice,.webs-sidebar-left{\n    display: none !important;\n}\n.wrap-main.sidebar.left-sidebar{\n    width: unset;\n    float: unset;\n}\nbody, font, span, i, ruby, b{\n    font-family: Garamont, \"NotoSansJP\" !important;\n}\n.webs-pagetitle, .sidebar .pagetitle-wrap{\n    width: unset !important;\n}\ntable{\n    border-spacing: 0;\n    border-color: #0002;\n}\n.has-children ul{\n    column-count: 2;\n    column-gap: 0;\n}\n#webs-header nav>ul>li ul>li{\n    padding: 0;\n}\n#webs-header nav>ul>li ul>li a{\n    padding: 1em;\n}\nrt{display:none;}\n@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local(\"Noto Sans JP Thin\");\nunicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 100;}\n@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local(\"Noto Sans JP Light\");\nunicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 300;}\n@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local(\"Noto Sans JP Regular\");\nunicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 400;}\n@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local(\"Noto Sans JP Medium\");\nunicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;  font-weight: 500;}\n@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local(\"Noto Sans JP Bold\");\nunicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 700;}\n@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local(\"Noto Sans JP Black\");\nunicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 900;}\n",
+				"urlPrefixes": [
+					"https://www.imabi.net/"
+				]
+			}
+		],
+		"updateDate": 1609271977436,
+		"_id": "a7fe64d8-1631-4d1e-944f-f0c7fafca11e",
+		"_rev": 1609711156189,
+		"id": 3
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1609992694015,
+		"name": "wik.org",
+		"sections": [
+			{
+				"code": "@media (max-width: 1200px){\n    html{\n        font-size: 0.8rem;\n    }\n    #mw-panel{\n        width: 2em;\n        opacity: 0;\n        overflow: hidden;\n    }\n    #mw-panel a{\n        color: transparent;\n    }\n    #mw-panel:hover{\n        width: 10em;\n        background-color: #f6f6f6;\n        border: 0.1em solid #ddd;\n        opacity: inherit;\n    }\n    #mw-panel:hover a{\n        color: #0645ad;\n    }\n    \n    #p-logo{\n        display: none;\n    }\n    #toc{\n        font-size: 1rem;\n        display: block;\n        position: fixed;\n        top: 3.5em;\n        left: 1em;\n        float: right;\n        width: 12em;\n        clear: both;\n        max-height: 89vh !important;\n        overflow-y: scroll;\n        box-sizing: border-box;\n        padding: 0.66em;\n        \n        \n    }\n    #toc  li{\n        font-size: 0.95em;\n    }\n    .toc .toctitle {\n    text-align: left;\n}\n    #toc a{\n        color: #000d;\n    }\n    \n    #toc a:target{\n        background-color: grey;\n    }\n    .mw-content-ltr .toc ul ul, .mw-content-rtl .mw-content-ltr .toc ul ul {\n        margin: 0 0 0 0.8em;}\n    [href*=\"#cite_note\"]{\n        color: #0003;\n    }\n    #mw-head{\n        position: static;\n    }\n\n\n    .mw-body{\n        margin-top: 0;\n    }\n    #p-search{\n\n        float:left;\n        position: fixed;\n        top: 1em;\n        left: 1em;\n        width: 12em;\n        background-color:white;\n        margin: 0;\n        \n    }\n    #p-search, #p-search *, #bodyContent{\n        font-size: 1rem !important;\n    }\n    .vertical-navbox tr:not(:first-child){\n        display:none;\n    }\n    .vertical-navbox:hover tr:not(:first-child){\n        display:inherit;\n    }\n    .ambox .mbox-text-span > :not(b){\n        font-size: 0;\n    }\n    .ambox .mbox-image{\n        display: none;\n    }\n    .ambox{\n        border: 1px solid #a2a9b1 !important;\n        height: auto;\n        margin: 0 !important;\n        display: inline-table;\n\n        line-height: 1.2;\n    }\n    .ambox-multiple_issues .mw-collapsible, .ambox-multiple_issues .mw-collapsible-content *{\n        font-size: 1em !important;\n    }\n    .hide-when-compact{display:none}\n    #searchform{\n        margin: 0 !important;\n    }\n    #p-search #searchInput{\n                width: 100%;\n    }\n    #simpleSearch{\n        min-width: unset;\n        width: unset;\n        max-width: unset;\n    }\n    #mw-page-base{\n        display:none;\n    }\n    .vector-menu-content-list li, .vector-menu-content-list li a{\n        background: unset;\n        border: unset;\n        \n    }\n    #content{\n        margin-left: 14em;\n        padding-top: 2em;\n        border: none;\n        min-height:100vh;\n        box-sizing: border-box;\n    }\n    .hide-default > :not(h2){\n        display:none !important;\n    }\n    .hide-default:hover > :not(h2){\n        display:block !important;\n    }\n    \n    /*read, talk etc*/\n    \n\n    #right-navigation, #left-navigation{\n        margin: 0;\n        float: none;\n        border: 1px solid #a2a9b1;\n        background-color: #f8f9fa;\n        position: fixed;\n        bottom: 1em;\n        left: 1em;\n        font-size: 1rem;\n        box-sizing: border-box;\n        width: 12em !important;\n        overflow-x: scroll;\n        overflow-y: hidden;\n    }\n    \n    \n    \n    #left-navigation{\n        bottom: 3.5em;\n    }\n        #p-personal{\n        position: static;\n        font-size: 1em;\n        background-color: white;\n            display:none;\n    }\n   #p-cactions-label, .mw-editsection, #footer{\n        display: none;\n    }\n    #p-navigation{\n        \n    }\n    .vector-menu-dropdown .vector-menu-content-list, .vector-menu-content-list *{\n        position: static;\n        display: flex;\n        visibility: visible;\n        opacity: 1;\n        background-color: transparent;\n        border: none;\n    }\n    .vector-menu-tabs, .vector-menu-tabs a, #mw-head .vector-menu-dropdown h3{\n        background-image: none;\n        height: 2em;\n    }\n    .vector-menu-tabs li{\n        line-height: 1;\n    }\n    .vector-menu-tabs li a{\n        height: auto;\n        padding: 0.75em;\n    }\n    #p-views{\n        display:none;\n    }\n    #p-cactions{\n        display: unset;\n    }\n\n    #siteSub, .toctogglespan{\n        display:none;\n    }\n    .mw-parser-output a.extiw, .mw-parser-output a.external, :link{\n        color: #25a;\n    }\n    a:hover{\n        color:#48e !important;\n        text-decoration: underline #48ea;\n    }\n    a.new{\n    color: #000;\n    text-decoration: underline wavy #0003;\n    }\n    .currently-in-view{\n       border-left: 0.2em solid #0003;\n       padding-left: 0.5em;\n    }\n}",
+				"domains": [
+					"wikipedia.org",
+					"wiktionary.org"
+				]
+			}
+		],
+		"updateDate": 1610451849926,
+		"_id": "9868a510-691b-474e-9737-932e850592d9",
+		"_rev": 1610451849926,
+		"id": 4
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610009791818,
+		"name": "stackoverflow.com",
+		"sections": [
+			{
+				"code": ".s-sidebarwidget__yellow{\n    --yellow-200: #0002 !important;\n    --yellow-100: #0001;\n    --yellow-050: #00000004;\n        \n}\n\n#sidebar:not(:hover), #left-sidebar:not(:hover){\n    position: absolute;\nopacity: 0.2;\n    border: 2em solid #0003;\n    top: 0;\n}\n\n#sidebar:not(:hover){\n\nright:-21.5em;\n}\n#left-sidebar:not(:hover){\n    left: -6em;\n    width: 8em;\n}\n* {\n    --theme-tag-border-color: #0001;\n    --theme-tag-background-color: #00000004;\n    --theme-tag-color: #0008;\n}\n\n\n#sidebar:hover{\n    position: absolute;\n    right: 0em;\n    background-color: white;\nopacity: 1;\n    z-index: 999;\n    padding-left: 1em;\n    box-shadow: 0 0 2em 0 #0003;\n}\nhtml{\n    overflow-x: hidden;\n    filter: saturate(0);\n}\n\n.s-btn__primary{\n    background-color: #0008;\n}\n\n#mainbar{\n    width: 80%;\n}\n\n.votecell *{\n    opacity: 0.7;\n}\n.js-vote-count {\n    opacity: 1;\n}\n.fw-wrap, #answers-header, .s-btn__primary{\n    opacity: 0.2;\n\n}\n\n.top-bar{\n    opacity: 0;\n}\n.top-bar:hover{\n    opacity: 1;\n}\n\n.comments-list{\n    opacity: 0.5;\n}\nbody{\n    padding: 0;\n    background: white;\n}\n#content{\n    border: none;\n}\n.s-notice > :not(:first-child) {\n    display: none;\n}\n\n.s-notice {\n    padding: 0.25em 0.5em;\n    background-color: #00000004;\n    border-color: #0001;\n}",
+				"domains": [
+					"stackoverflow.com",
+					"stackexchange.com"
+				]
+			}
+		],
+		"updateDate": 1610069937624,
+		"_id": "b6e2a249-9b7d-4e8a-b224-50f91835c053",
+		"_rev": 1610069937624,
+		"id": 5
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610182009642,
+		"name": "youtube.com",
+		"sections": [
+			{
+				"code": "",
+				"domains": [
+					"youtube.com"
+				]
+			}
+		],
+		"updateDate": 1610182071510,
+		"_id": "40feacb4-01e8-49a1-80a5-3e294f37827b",
+		"_rev": 1610182071510,
+		"id": 6
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610183659357,
+		"name": "smashingmagazine.com",
+		"sections": [
+			{
+				"code": ".c-garfield-native-panel, .c-promo-box, .feature-panel-container{\n    display:none;\n}",
+				"domains": [
+					"smashingmagazine.com"
+				]
+			}
+		],
+		"updateDate": 1610183698726,
+		"_id": "38d99fa0-1e57-446d-97ed-cd022c0a1c37",
+		"_rev": 1610183698726,
+		"id": 7
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610194779806,
+		"name": "nytimes.com",
+		"sections": [
+			{
+				"code": ".css-1bd8bfl{\n    display:none;\n}\np{\n    line-height: 1.3;\n    font-family: Garamond;\n    margin-block-end: 2em;\n    margin: 1em;\n}",
+				"domains": [
+					"nytimes.com"
+				]
+			}
+		],
+		"updateDate": 1610195746519,
+		"_id": "5556dcd5-15bd-4fa3-95bd-63c4fc6a2103",
+		"_rev": 1610195746519,
+		"id": 8
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610277749738,
+		"name": "wiktionary.org",
+		"sections": [
+			{
+				"code": "\n/*\n#Japanese .tr {\n  display: none;\n}\n\n[href=\"/wiki/Appendix:Japanese_pronunciation\"] {\n  display: none;\n}*/\n\n.language-container#Japanese:only-of-type .h-n {\n  display: none;\n}\n\n.NavToggle, .checktrans, [title=\"Edit table heading\"] {\n  display: none;\n}\n\n.checksense>dl {\n  display: none;\n}\n\n.checksense::before {\n  content: \"Unmapped to senses\";\n  font-style: italic;\n}\n\ndiv.NavFrame div.NavHead {\n  background: none;\n  background-color: transparent;\n  background-image: none;\n  padding: 0;\n  font-weight: 400;\n}\n\n.NavHead::after {\n  content: \" ▼\";\n  color: #0003;\n}\n\ndiv.NavFrame {\n  border: none;\n}\n\n.mediaContainer, .k-player {\n  width: 6em !important;\n  border: 0.05em solid #0003;\n  border-radius: 0.5em;\n  background: white;\n  overflow: hidden;\n  box-sizing: border-box;\n}\n\n.k-player .control-bar {\n  border: none;\n  background: white;\n}\n\n.k-player .volume-slider, .k-player .volume_control, .k-player .k-options {\n  display: none;\n}\n\n.derivedterms {\n  background: transparent !important;\n}\n\n.word-parallel > .h-n {\n  font-size: 1em;\n}\n\n[href=\"/wiki/Wiktionary:International_Phonetic_Alphabet\"]~sup {\n  display: none;\n}\n\n[id*=Pronunciation] ul li {\n  display: inline;\n}\n\n[id*=Pronunciation] ul li:after {\n  content: \"\";\n  padding: 0 1em;\n}\n\n[id*=Pronunciation] ul {\n  margin: 0;\n}\n\n.word-container>p {\n  margin-top: 3rem;\n}\n\n.word-container>ol {\n  border-left: 0.25em solid #0001;\n  margin: 0.5em 0 1.5em;\n  max-width: 93%;\n}\n\n.word-container>ol>li {\n  margin-left: 3em;\n}\n\n.word-container>.h-n {\n  display: none;\n}\n\n.word-container::before {\n  position: absolute;\n  right: 0.25em;\n  margin-top: 0.25em;\n  font-family: Garamond;\n  font-size: 4em;\n  line-height: 1;\n  color: #0003;\n}\n\n[id*=Noun]::before {\n  content: \"N\";\n}\n\n[id*=Adjective]::before {\n  content: \"A\";\n}\n\n[id*=Verb]::before {\n  content: \"V\";\n}\n[id*=Suffix]::before {\n  content: \"S\";\n}\n\n[id*=Counter]::before {\n  content: \"C\";\n}\n\n[id*=Particle]::before {\n  content: \"P\";\n}\n\n.word-info {\n  box-sizing: border-box;\n  max-height: 30em;\n  height: max-content;\n  overflow: scroll;\n}\n\n.word-info>.h-n {\n  font-weight: normal;\n}\n\nh1 {\n  display: none;\n}\n\n.word-container>p:first-of-type>.headword {\n  font-family: Garmaond;\n  font-size: 1.5rem;\n  color: #000a;\n}\n\n.word-container>p:first-of-type {\n  font-size: 0em;\n}\n\n.word-container>p:first-of-type:hover {\n  font-size: 1em;\n}\n\n.word-container>p:first-of-type::after {\n  content: \"Show inflections\";\n  margin-left: 1em;\n  font-size: 1rem;\n  color: #000a;\n}\n\n.word-container>p:first-of-type:hover::after {\n  font-size: 0em;\n}\n.sister-wikipedia {\n  background: transparent !important;\n  border: none !important;\n  width: auto !important;\n  height: auto !important;\n  padding: 0 !important;\n}\n\n.sister-wikipedia> :first-child {\n  display: none;\n}\n\n.sister-wikipedia>div {\n  font-size: 0;\n}\n\n.sister-wikipedia>div div a::before {\n  content: \"W\";\n  font-family: Garamond;\n  font-size: 2.5rem;\n  background-color: white;\n  color: #000a;\n  line-height: 1;\n  padding: 0.5em;\n  border: 0.1rem solid #0003;\n  display: block;\n  border-radius: 0.5em\n}\n\n#catlinks a:not([href*=Japanese]) {\n  color: #000a;\n}\n\n[style*=\"#f0f0f0\"] p{\n    font-size: 0;\n    height: 1.3rem;\n    padding-top: 0;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n[style*=\"#f0f0f0\"] p::before{\n    content: \"Imported from somewhere, maybe incorrect.\";\n    font-size: 1rem;\n}\n.was-wotd{\n    display:none;\n}\niframe{\n    width: 100%;\nheight: 40em;\n\nborder: none;\n}",
+				"domains": [
+					"wiktionary.org",
+					""
+				]
+			}
+		],
+		"updateDate": 1610474294729,
+		"_id": "47cc63ce-b422-4fc9-8900-5055b1e90726",
+		"_rev": 1610474294729,
+		"id": 9
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610357398185,
+		"name": "en.wiktionary.org",
+		"sections": [
+			{
+				"code": "html{\n    font-size: 0.7em;\n\n}\n#content{\n    margin-left: 0;\n    padding: 3em 1.5em 1em;\n    \n}\n#toc, #mw-navigation, #catlinks{\n    display:none;\n}\n\n.word-info{\n    flex-basis: 50%;\n}",
+				"regexps": [
+					"https://en.wiktionary[^\\?]*[\\?&]iframe=true",
+					"https://en.wikipedia[^\\?]*[\\?&]iframe=true"
+				]
+			}
+		],
+		"updateDate": 1610375561747,
+		"_id": "98874e16-fbce-4087-a6d0-1b884569742e",
+		"_rev": 1610375561747,
+		"id": 10
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610470607200,
+		"name": "dict.cc",
+		"sections": [
+			{
+				"code": "#maincontent > img+div, #inotherlangs{\n    display:none;\n}\n#maincontent{\n        margin: 0 auto !important;\n        max-width: 50em;\n    overflow:hidden;\n    padding: 0;\n    width: unset !important;\n}\n#maincontent > * {\n\n    width: 100%;\n}\n#maincontent > table{\n    table-layout: auto !important;\n}",
+				"domains": [
+					"dict.cc"
+				]
+			}
+		],
+		"updateDate": 1610471886063,
+		"_id": "a95402cb-d8d3-4de5-9c2a-998d4b9ad80e",
+		"_rev": 1610471886063,
+		"id": 11
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1610470727446,
+		"name": "linguee.com",
+		"sections": [
+			{
+				"code": ".l_deepl_ad__content_container{\n    display:none;\n}\n#mainlayout{\n    padding: 0 1em !important;\n}\n#outer_div{\n    min-width: unset !important;\n    max-width: 60em !important;\n}",
+				"domains": [
+					"linguee.com"
+				]
+			}
+		],
+		"updateDate": 1610470910657,
+		"_id": "7476340c-2d54-4fc5-8878-ab0be3f3c4ee",
+		"_rev": 1610470910657,
+		"id": 12
+	}
+]

@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://calendar.google.com/calendar/r/yea*
+// @match        https://calendar.google.com/calendar/*/yea*
 // @grant        none
 // ==/UserScript==
 
@@ -12,29 +12,33 @@
     'use strict';
 
     let themedMonthArray = [
-  {
-    startdate: 20200601,
-    length: 2,
-    color: '#ddfff7',
-    name: 'Job related todos, uni and 🇯🇵 prep in KND'
-  }, {
-    startdate: 20200801,
-    length: 2,
-    color: '#ffdddd',
-    name: '🇯🇵 courses, tandem, etc. as well as BA Arbeit in MUC'
-  }, {
-    startdate: 20201001,
-    length: 3,
-    color: '#ffdddd',
-    name: '🇯🇵 courses, tandem, etc. in MUC'
-  }, {
+        {
     startdate: 20210101,
-    length: 6,
+    length: 2,
     color: '#f7e3f7',
-    name: 'TBD, perhaps 🇯🇵'
-  }, {
+    name: 'JP, Phil flashcards in prep for BA, Code',
+            note: "Via costud, also rel. building for support & future travel"
+  },{
+    startdate: 20210301,
+    length: 1,
+    color: '#f7e3f7',
+    name: 'BA as main task',
+      note: "Via costud, also rel. building for support & future travel"
+  },{
+    startdate: 20210401,
+    length: 3,
+    color: '#f7e3f7',
+    name: 'Code learning',
+      note: "Via costud (possible transition to IRL), also rel. building for support & future travel"
+  },{
     startdate: 20210701,
-    length: 6,
+    length: 3,
+    color: '#f7e3f7',
+    name: 'Code working, jp learning',
+      note: "Via costud (possible transition to IRL), also rel. building for support & future travel"
+  }, {
+    startdate: 20211001,
+    length: 2,
     color: '#d6f7ff',
     name: 'World travel for understanding & living place discovery',
     note: 'After Corona, maybe travel the world (not alone, of course): If I want to decide where to live, I need to know the world, and currently, I just don’t. This would involve intensive documentation in form of diary entries (and maybe more public articles), photos, etc., to make sure I remember and I have resources to judge. But make sure to not travel alone!'
@@ -51,7 +55,7 @@ window.setInterval(() => {
         headerText.style = 'font-size: 1.2em; font-weight: bold; padding-bottom: 0.5em;';
         headerText.textContent = themedMonth.name;
         header.appendChild(headerText);
-        if (themedMonth.note && i === 0) {
+        if (themedMonth.note) {
           let noteText = document.createElement('div');
           noteText.textContent = themedMonth.note;
           header.appendChild(noteText);

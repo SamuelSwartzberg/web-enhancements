@@ -32,7 +32,7 @@
             let commaValueArray = textArray[1].split(","); //The first element will contain our hbf, the last two our date values
             if (!commaValueArray[1]) continue; // There are no commas to split, we're in the wrong span
             if(commaValueArray[commaValueArray.length-3] === " Done"){
-              window.getFirstParentThatMatchesSelector(spanElement, 'div').style.display = "none";
+              spanElement.closest('div').style.display = "none";
             }
             let durationString = commaValueArray[0].match(/^\d+\w?/g); // duration comes directly after hbf
             window.deferDebugger[taskName].durationString=durationString;
