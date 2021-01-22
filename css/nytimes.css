@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name         nytimes
+@description  .
+@namespace    samswartzberg.com
+@author       Sam Swartzberg
+@preprocessor stylus
+@version      1.0.0
+@updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/nytimes.css
+==/UserStyle== */
+.css-1bd8bfl{
+  display:none;
+}
+p{
+  line-height: 1.3;
+  font-family: Garamond;
+  margin-block-end: 2em;
+  margin: 1em;
+}

@@ -1,0 +1,97 @@
+/* ==UserStyle==
+@name         stackexchange
+@description  .
+@namespace    samswartzberg.com
+@author       Sam Swartzberg
+@preprocessor stylus
+@version      1.0.0
+@updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/stackexchange.css
+==/UserStyle== */
+.s-sidebarwidget__yellow{
+  --yellow-200: #0002 !important;
+  --yellow-100: #0001;
+  --yellow-050: #00000004;
+      
+}
+
+#sidebar:not(:hover), #left-sidebar:not(:hover){
+  position: absolute;
+opacity: 0.2;
+  border: 2em solid #0003;
+  top: 0;
+}
+
+#sidebar:not(:hover){
+
+right:-21.5em;
+}
+#left-sidebar:not(:hover){
+  left: -6em;
+  width: 8em;
+}
+* {
+  --theme-tag-border-color: #0001;
+  --theme-tag-background-color: #00000004;
+  --theme-tag-color: #0008;
+}
+
+
+#sidebar:hover{
+  position: absolute;
+  right: 0em;
+  background-color: white;
+opacity: 1;
+  z-index: 999;
+  padding-left: 1em;
+  box-shadow: 0 0 2em 0 #0003;
+}
+html{
+  overflow-x: hidden;
+  filter: saturate(1);
+}
+
+.s-btn__primary{
+  background-color: #0008;
+}
+
+#mainbar{
+  width: 80%;
+}
+
+.votecell *{
+  opacity: 0.7;
+}
+.js-vote-count {
+  opacity: 1;
+}
+.fw-wrap, #answers-header, .s-btn__primary{
+  opacity: 0.2;
+
+}
+
+.top-bar{
+  opacity: 0;
+}
+.top-bar:hover{
+  opacity: 1;
+}
+
+.comments-list{
+  opacity: 0.5;
+}
+body{
+  padding: 0;
+  background: white;
+}
+#content{
+  border: none;
+}
+.s-notice > :not(:first-child) {
+  display: none;
+}
+
+.s-notice {
+  padding: 0.25em 0.5em;
+  background-color: #00000004;
+  border-color: #0001;
+}

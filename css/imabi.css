@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name         imabi
+@description  .
+@namespace    samswartzberg.com
+@author       Sam Swartzberg
+@preprocessor stylus
+@version      1.0.0
+@updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/imabi.css
+==/UserStyle== */
+body{
+  line-height: 1.5;
+}
+.tealditDotComNewBarNotice,.webs-sidebar-left{
+  display: none !important;
+}
+.wrap-main.sidebar.left-sidebar{
+  width: unset;
+  float: unset;
+}
+body, font, span, i, ruby, b{
+  font-family: Garamont, "NotoSansJP" !important;
+}
+.webs-pagetitle, .sidebar .pagetitle-wrap{
+  width: unset !important;
+}
+table{
+  border-spacing: 0;
+  border-color: #0002;
+}
+.has-children ul{
+  column-count: 2;
+  column-gap: 0;
+}
+#webs-header nav>ul>li ul>li{
+  padding: 0;
+}
+#webs-header nav>ul>li ul>li a{
+  padding: 1em;
+}
+rt{display:none;}
+@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local("Noto Sans JP Thin");
+unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 100;}
+@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local("Noto Sans JP Light");
+unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 300;}
+@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local("Noto Sans JP Regular");
+unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 400;}
+@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local("Noto Sans JP Medium");
+unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;  font-weight: 500;}
+@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local("Noto Sans JP Bold");
+unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 700;}
+@font-face {font-family: 'NotoSansJP'; font-style: normal; src: local("Noto Sans JP Black");
+unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf; font-weight: 900;}

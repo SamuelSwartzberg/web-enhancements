@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name         jisho
+@description  .
+@namespace    samswartzberg.com
+@author       Sam Swartzberg
+@preprocessor stylus
+@version      1.0.0
+@updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/jisho.css
+==/UserStyle== */
+body > header.row{
+  display:none;
+}
+.row{
+  max-width: 85em;
+}
+html{
+  font-size: 0.8em;
+}

@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         wik-iframe
+@description  .
+@namespace    samswartzberg.com
+@author       Sam Swartzberg
+@preprocessor stylus
+@version      1.0.0
+@updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/wik-iframe.css
+==/UserStyle== */
+html{
+  font-size: 0.7em;
+
+}
+#content{
+  margin-left: 0;
+  padding: 3em 1.5em 1em;
+  
+}
+#toc, #mw-navigation, #catlinks{
+  display:none;
+}
+
+.word-info{
+  flex-basis: 50%;
+}

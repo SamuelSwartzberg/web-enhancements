@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name         linguee
+@description  .
+@namespace    samswartzberg.com
+@author       Sam Swartzberg
+@preprocessor stylus
+@version      1.0.0
+@updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/linguee.css
+==/UserStyle== */
+.l_deepl_ad__content_container{
+  display:none;
+}
+#mainlayout{
+  padding: 0 1em !important;
+}
+#outer_div{
+  min-width: unset !important;
+  max-width: 60em !important;
+}

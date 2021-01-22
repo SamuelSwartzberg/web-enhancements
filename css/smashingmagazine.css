@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name         smashingmagazine
+@description  .
+@namespace    samswartzberg.com
+@author       Sam Swartzberg
+@preprocessor stylus
+@version      1.0.0
+@updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/smashingmagazine.css
+==/UserStyle== */
+.c-garfield-native-panel, .c-promo-box, .feature-panel-container{
+  display:none;
+} 
