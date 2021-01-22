@@ -12,7 +12,7 @@
     'use strict';
     document.addEventListener('keyup', (e) => {
         console.log(e);
-        if(!document.activeElement.matches("[title='Search']")){
+        if(!document.activeElement || !document.activeElement.matches("[title='Search']")){
             if (e.key === "i"){
             document.querySelector("[href*='tbm=isch']").click();
             }

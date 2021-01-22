@@ -8,7 +8,7 @@
 @updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/globals.css
 ==/UserStyle== */
 
-@-moz-document url("*") {
+@-moz-document regexp(".*") {
   /* Change the highlight color on scribd.com */
   .highlight.highlight_highlight.selected {
     background-color: #ff0;
