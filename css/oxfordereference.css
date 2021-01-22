@@ -7,16 +7,19 @@
 @version      1.0.0
 @updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/oxfordrefrence.css
 ==/UserStyle== */
-#columnOne, #topControls, #footerWrap, #headerWrap, .pagetitlePagelinks{
-  display:none;
-}
-#contentWrapper{
-  width: auto;
-}
-#mainContent{
-  margin: 0 auto;
-  padding: 0 1em;
-  width: auto;
-  max-width: 50em;
-  float: none;
+
+@-moz-document domain("oxfordreference.com") {
+  #columnOne, #topControls, #footerWrap, #headerWrap, .pagetitlePagelinks {
+    display: none;
+  }
+  #contentWrapper {
+    width: auto;
+  }
+  #mainContent {
+    margin: 0 auto;
+    padding: 0 1em;
+    width: auto;
+    max-width: 50em;
+    float: none;
+  }
 }
