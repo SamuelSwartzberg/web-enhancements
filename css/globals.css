@@ -7,185 +7,52 @@
 @version      1.0.0
 @updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/web-enhancements/main/css/global.css
 ==/UserStyle== */
-/* Change the highlight color on scribd.com */
 
-.highlight.highlight_highlight.selected{
-  background-color: #ff0;
-}
-.highlight.highlight_highlight{
-  background-color: #ffeb3b;
-}
-
-/* Adds highlight classes that I then can use around the web */
-
-.highlight-sam-yellow{
-background-color: yellow !important;
-}
-.highlight-sam-grey{
-background-color: #aaa !important;
-}
-
-/* marks imabi lessons as completely flashcardified */
-
-a[href*="https://www.imabi.net/shikahoka"],
-a[href*="https://www.imabi.net/theparticleyori"],
-a[href*="https://www.imabi.net/apologizing"],
-a[href*="https://www.imabi.net/thanks"],
-a[href*="https://www.imabi.net/onomatopoeia"],
-a[href*="https://www.imabi.net/onomatopoeiaii"],
-a[href*="https://www.imabi.net/onomatopoeiaiii"],
-a[href*="https://www.imabi.net/pluralization"],
-a[href*="https://www.imabi.net/rentaishi"],
-a[href*="https://www.imabi.net/tachi"],
-a[href*="https://www.imabi.net/iadverbialnouns"],
-a[href*="https://www.imabi.net/theparticletari"],
-a[href*="https://www.imabi.net/tokanadonanka"],
-a[href*="https://www.imabi.net/nante"],
-a[href*="https://www.imabi.net/theparticleya"],
-a[href*="https://www.imabi.net/theparticleshi"],
-a[href*="https://www.imabi.net/adjectivesii"],
-a[href*="https://www.imabi.net/adjectivesiiinavsno.htm"],
-a[href*="https://www.imabi.net/adjectives.htm"],
-a[href*="https://www.imabi.net/ooisukunai.htm"],
-a[href*="https://www.imabi.net/pronunciationi.htm"],
-a[href*="https://www.imabi.net/pronunciationii.htm"],
-a[href*="https://www.imabi.net/hiragana.htm"],
-a[href*="https://www.imabi.net/katakana.htm"],
-a[href*="https://www.imabi.net/spellingissues.htm"],
-a[href*="https://www.imabi.net/kanjiintro.htm"],
-a[href*="https://www.imabi.net/spellingissues.htm"],
-a[href*="https://www.imabi.net/kanjiintroii.htm"],
-a[href*="https://www.imabi.net/10majoraspects.htm"],
-a[href*="https://www.imabi.net/nounsandpronouns.htm"],
-a[href*="https://www.imabi.net/copularsentencesi.htm"],
-a[href*="https://www.imabi.net/copularsentencesii.htm"],
-a[href*="https://www.imabi.net/theparticlewoi.htm"],
-a[href*="https://www.imabi.net/regularverbsi.htm"],
-a[href*="https://www.imabi.net/regularverbsii.htm"],
-a[href*="https://www.imabi.net/theparticleka.htm"],
-a[href*="https://www.imabi.net/irregularverbs.htm"],
-a[href*="https://www.imabi.net/theparticlekaii.htm"],
-a[href*="https://www.imabi.net/theparticlegaii.htm"],
-a[href*="https://www.imabi.net/theparticlemo.htm"],
-a[href*="https://www.imabi.net/kosoadoi.htm"],
-a[href*="https://www.imabi.net/kosoadoiiherethere.htm"],
-a[href*="https://www.imabi.net/essentialphrases.htm"],
-a[href*="https://www.imabi.net/yesphrases.htm"],
-a[href*="https://www.imabi.net/nophrases.htm"],
-a[href*="https://www.imabi.net/theparticlete.htm"],
-a[href*="https://www.imabi.net/numbersi.htm"],
-a[href*="https://www.imabi.net/countersi.htm"],
-a[href*="https://www.imabi.net/countersiikovstsu.htm"],
-a[href*="https://www.imabi.net/theparticleno.htm"],
-a[href*="https://www.imabi.net/theparticleni.htm"],
-a[href*="https://www.imabi.net/theparticlee.htm"],
-a[href*="https://www.imabi.net/theparticlede.htm"],
-a[href*="https://www.imabi.net/thefinalparticlete.htm"],
-a[href*="https://www.imabi.net/aruiru.htm"]
-{
-background-color: #cfa;
-}
-
-a[href*="https://www.imabi.net/theparticlegai.htm"]::before,
-a[href*="https://www.imabi.net/theparticlewai.htm"]::before{
-  content: "☑️";
-}
-
-
-/* marks kanshudo articles as completely flashcardified */
-
-a[href*="/より"]::before,
-a[href*="のほうが"]::before,
-a[href*="というより"]::before,
-a[href*="例の"]::before,
-a[href*="ないで済む"]::before,
-a[href*="/ら?"]::before,
-a[href*="/たり?"]::before,
-a[href*="/とか?"]::before,
-a[href*="/など?"]::before,
-a[href*="/なんて?"]::before,
-a[href*="/切る?"]::before,
-a[href*="/きれない?"]::before,
-a[href*="/し_form?"]::before,
-a[href*="/や?"]::before,
-a[href*="/し?"]::before,
-a[href*="/の_adjectives?"]::before,
-a[href*="/adjectives?"]::before,
-a[href*="/する?"]::before
-{
-content: "✅";
-}
-
-
-a[href*="https://myanimelist.net/anime/32281/Kimi_no_Na_wa"]::before,
-a[href*="https://myanimelist.net/anime/28851/Koe_no_Katachi"]::before,
-a[href*="https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso"]::before,
-a[href*="https://myanimelist.net/anime/10408/Hotarubi_no_Mori_e"]::before,
-a[href*="https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai"]::before,
-a[href*="Suzumiya_Haruhi"]::before,
-a[href*="Kenpuu_Denki_Berserk"]::before,
-a[href*="Shouwa_Genroku_Rakugo_Shinjuu"]::before,
-a[href*="Tenki_no_Ko"]::before,
-a[href*="https://myanimelist.net/anime/5941/Cross_Game"]::before,
-a[href*="Hibike_Euphonium"]::before,
-a[href*="Yahari_Ore_no_Seishun_Love_Comedy"]::before,
-a[href*="Toradora"]::before,
-a[href*="ReLIFE"]::before,
-a[href*="Code_Geass"]::before,
-a[href*="https://myanimelist.net/anime/34636/Ballroom_e_Youkoso"]::before,
-a[href*="Liz_to_Aoi_Tori"]::before,
-a[href*="Kimi_no_Suizou_wo_Tabetai"]::before,
-a[href*="Fullmetal_Alchemist__Brotherhood"]::before,
-a[href*="Shingeki_no_Kyojin"]::before,
-a[href*="3-gatsu_no_Lion"]::before,
-a[href*="Saiki_Kusuo"]::before,
-a[href*="https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei"]::before,
-a[href*="Kara_no_Kyoukai"]::before,
-a[href*="Ookami_to_Koushinryou"]::before,
-a[href*="Sakamichi_no_Apollon"]::before,
-a[href*="Bakemonogatari"]::before,
-a[href*="NHK_ni_Youkoso"]::before,
-a[href*="Doukyuusei"]::before,
-a[href*="Given"]::before,
-a[href*="Nodame_Cantabile"]::before,
-a[href*="Hachimitsu_to_Clover"]::before,
-a[href*="Sennen_Joyuu"]::before,
-a[href*="Little_Busters"]::before
-{
-content: "✅";
-}
-
-a[href*="https://myanimelist.net/anime/4181/Clannad__After_Story"]::before,
-a[href*="Monogatari_Series"]::before,
-a[href*="Haikyuu"]::before,
-a[href*="https://myanimelist.net/anime/40776/Haikyuu__To_the_Top_2nd_Season"]::before,
-a[href*="https://myanimelist.net/anime/36862/Made_in_Abyss_Movie_3__Fukaki_Tamashii_no_Reimei"]::before,
-a[href*="https://myanimelist.net/anime/37987/Violet_Evergarden_Movie"]::before,
-a[href*="https://myanimelist.net/anime/30654/Ansatsu_Kyoushitsu_2nd_Season"]::before,
-a[href*="Saenai_Heroine"]::before,
-a[href*="https://myanimelist.net/anime/32935/Haikyuu__Karasuno_Koukou_vs_Shiratorizawa_Gakuen_Koukou"]::before,
-a[href*="Fruits_Basket"]::before,
-a[href*="Kono_Oto_"]::before,
-a[href*="Bakuman"]::before
-{
-content: "☑️";
-}
-
-a[href*="/channel/UCMmaBzfCCwZ2KqaBJjkj0fw"],
-a[href*="/channel/UCCGvq-qmjFmmMD4e-PLQqGg"]{
-  background-color: #900;
-}
-
-.learn-done{
-  background-color: #f0ffee;
-}
-
-#iframe-popup{
-  position: absolute;
-top: 200px;
-left: 200px;
-border: .1em solid #0003;
-border-radius: 1em;
-box-shadow: 0 1em 3em #0003;
-  background-color: white;
+@-moz-document url("*") {
+  /* Change the highlight color on scribd.com */
+  .highlight.highlight_highlight.selected {
+    background-color: #ff0;
+  }
+  .highlight.highlight_highlight {
+    background-color: #ffeb3b;
+  }
+  /* Adds highlight classes that I then can use around the web */
+  .highlight-sam-yellow {
+    background-color: yellow !important;
+  }
+  .highlight-sam-grey {
+    background-color: #aaa !important;
+  }
+  /* marks imabi lessons as completely flashcardified */
+  a[href*="https://www.imabi.net/shikahoka"], a[href*="https://www.imabi.net/theparticleyori"], a[href*="https://www.imabi.net/apologizing"], a[href*="https://www.imabi.net/thanks"], a[href*="https://www.imabi.net/onomatopoeia"], a[href*="https://www.imabi.net/onomatopoeiaii"], a[href*="https://www.imabi.net/onomatopoeiaiii"], a[href*="https://www.imabi.net/pluralization"], a[href*="https://www.imabi.net/rentaishi"], a[href*="https://www.imabi.net/tachi"], a[href*="https://www.imabi.net/iadverbialnouns"], a[href*="https://www.imabi.net/theparticletari"], a[href*="https://www.imabi.net/tokanadonanka"], a[href*="https://www.imabi.net/nante"], a[href*="https://www.imabi.net/theparticleya"], a[href*="https://www.imabi.net/theparticleshi"], a[href*="https://www.imabi.net/adjectivesii"], a[href*="https://www.imabi.net/adjectivesiiinavsno.htm"], a[href*="https://www.imabi.net/adjectives.htm"], a[href*="https://www.imabi.net/ooisukunai.htm"], a[href*="https://www.imabi.net/pronunciationi.htm"], a[href*="https://www.imabi.net/pronunciationii.htm"], a[href*="https://www.imabi.net/hiragana.htm"], a[href*="https://www.imabi.net/katakana.htm"], a[href*="https://www.imabi.net/spellingissues.htm"], a[href*="https://www.imabi.net/kanjiintro.htm"], a[href*="https://www.imabi.net/spellingissues.htm"], a[href*="https://www.imabi.net/kanjiintroii.htm"], a[href*="https://www.imabi.net/10majoraspects.htm"], a[href*="https://www.imabi.net/nounsandpronouns.htm"], a[href*="https://www.imabi.net/copularsentencesi.htm"], a[href*="https://www.imabi.net/copularsentencesii.htm"], a[href*="https://www.imabi.net/theparticlewoi.htm"], a[href*="https://www.imabi.net/regularverbsi.htm"], a[href*="https://www.imabi.net/regularverbsii.htm"], a[href*="https://www.imabi.net/theparticleka.htm"], a[href*="https://www.imabi.net/irregularverbs.htm"], a[href*="https://www.imabi.net/theparticlekaii.htm"], a[href*="https://www.imabi.net/theparticlegaii.htm"], a[href*="https://www.imabi.net/theparticlemo.htm"], a[href*="https://www.imabi.net/kosoadoi.htm"], a[href*="https://www.imabi.net/kosoadoiiherethere.htm"], a[href*="https://www.imabi.net/essentialphrases.htm"], a[href*="https://www.imabi.net/yesphrases.htm"], a[href*="https://www.imabi.net/nophrases.htm"], a[href*="https://www.imabi.net/theparticlete.htm"], a[href*="https://www.imabi.net/numbersi.htm"], a[href*="https://www.imabi.net/countersi.htm"], a[href*="https://www.imabi.net/countersiikovstsu.htm"], a[href*="https://www.imabi.net/theparticleno.htm"], a[href*="https://www.imabi.net/theparticleni.htm"], a[href*="https://www.imabi.net/theparticlee.htm"], a[href*="https://www.imabi.net/theparticlede.htm"], a[href*="https://www.imabi.net/thefinalparticlete.htm"], a[href*="https://www.imabi.net/aruiru.htm"] {
+    background-color: #cfa;
+  }
+  a[href*="https://www.imabi.net/theparticlegai.htm"]::before, a[href*="https://www.imabi.net/theparticlewai.htm"]::before {
+    content: "☑️";
+  }
+  /* marks kanshudo articles as completely flashcardified */
+  a[href*="/より"]::before, a[href*="のほうが"]::before, a[href*="というより"]::before, a[href*="例の"]::before, a[href*="ないで済む"]::before, a[href*="/ら?"]::before, a[href*="/たり?"]::before, a[href*="/とか?"]::before, a[href*="/など?"]::before, a[href*="/なんて?"]::before, a[href*="/切る?"]::before, a[href*="/きれない?"]::before, a[href*="/し_form?"]::before, a[href*="/や?"]::before, a[href*="/し?"]::before, a[href*="/の_adjectives?"]::before, a[href*="/adjectives?"]::before, a[href*="/する?"]::before {
+    content: "✅";
+  }
+  a[href*="https://myanimelist.net/anime/32281/Kimi_no_Na_wa"]::before, a[href*="https://myanimelist.net/anime/28851/Koe_no_Katachi"]::before, a[href*="https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso"]::before, a[href*="https://myanimelist.net/anime/10408/Hotarubi_no_Mori_e"]::before, a[href*="https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai"]::before, a[href*="Suzumiya_Haruhi"]::before, a[href*="Kenpuu_Denki_Berserk"]::before, a[href*="Shouwa_Genroku_Rakugo_Shinjuu"]::before, a[href*="Tenki_no_Ko"]::before, a[href*="https://myanimelist.net/anime/5941/Cross_Game"]::before, a[href*="Hibike_Euphonium"]::before, a[href*="Yahari_Ore_no_Seishun_Love_Comedy"]::before, a[href*="Toradora"]::before, a[href*="ReLIFE"]::before, a[href*="Code_Geass"]::before, a[href*="https://myanimelist.net/anime/34636/Ballroom_e_Youkoso"]::before, a[href*="Liz_to_Aoi_Tori"]::before, a[href*="Kimi_no_Suizou_wo_Tabetai"]::before, a[href*="Fullmetal_Alchemist__Brotherhood"]::before, a[href*="Shingeki_no_Kyojin"]::before, a[href*="3-gatsu_no_Lion"]::before, a[href*="Saiki_Kusuo"]::before, a[href*="https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei"]::before, a[href*="Kara_no_Kyoukai"]::before, a[href*="Ookami_to_Koushinryou"]::before, a[href*="Sakamichi_no_Apollon"]::before, a[href*="Bakemonogatari"]::before, a[href*="NHK_ni_Youkoso"]::before, a[href*="Doukyuusei"]::before, a[href*="Given"]::before, a[href*="Nodame_Cantabile"]::before, a[href*="Hachimitsu_to_Clover"]::before, a[href*="Sennen_Joyuu"]::before, a[href*="Little_Busters"]::before {
+    content: "✅";
+  }
+  a[href*="https://myanimelist.net/anime/4181/Clannad__After_Story"]::before, a[href*="Monogatari_Series"]::before, a[href*="Haikyuu"]::before, a[href*="https://myanimelist.net/anime/40776/Haikyuu__To_the_Top_2nd_Season"]::before, a[href*="https://myanimelist.net/anime/36862/Made_in_Abyss_Movie_3__Fukaki_Tamashii_no_Reimei"]::before, a[href*="https://myanimelist.net/anime/37987/Violet_Evergarden_Movie"]::before, a[href*="https://myanimelist.net/anime/30654/Ansatsu_Kyoushitsu_2nd_Season"]::before, a[href*="Saenai_Heroine"]::before, a[href*="https://myanimelist.net/anime/32935/Haikyuu__Karasuno_Koukou_vs_Shiratorizawa_Gakuen_Koukou"]::before, a[href*="Fruits_Basket"]::before, a[href*="Kono_Oto_"]::before, a[href*="Bakuman"]::before {
+    content: "☑️";
+  }
+  a[href*="/channel/UCMmaBzfCCwZ2KqaBJjkj0fw"], a[href*="/channel/UCCGvq-qmjFmmMD4e-PLQqGg"] {
+    background-color: #900;
+  }
+  .learn-done {
+    background-color: #f0ffee;
+  }
+  #iframe-popup {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    border: .1em solid #0003;
+    border-radius: 1em;
+    box-shadow: 0 1em 3em #0003;
+    background-color: white;
+  }
 }
