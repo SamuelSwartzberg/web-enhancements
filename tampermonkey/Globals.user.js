@@ -63,7 +63,13 @@ function getSelectionCoords(win) {
   // integrate wiktionary popup
   document.addEventListener('keyup', (e) => {
     console.log(e);
-    if (window.getSelection() && (!document.activeElement || !document.activeElement.matches(window.getSelection()))) {
+    if (
+      window.getSelection() 
+      && window.getSelection().toString()
+      && (
+        !document.activeElement 
+        || !document.activeElement.matches("input, textarea")
+      )) {
       
       if (e.key === "w" || e.key === "p") {
         if (!document.querySelector("#iframe-popup")) {
