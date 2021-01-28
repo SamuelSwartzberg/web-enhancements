@@ -107,5 +107,56 @@ function getSelectionCoords(win) {
   
   document.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach(item=>item.classList.add("h-n"));
 
+  // method to set modifier keys
+
+
+
+  let modifierManager={
+    modifiers: ["Alt", "Meta", "Control", "Shift" ],
+    modifiersSet: {},
+    toggleModifier: function(key){
+      if (this.modifiers.includes(key)) this.modifiersSet[key] = true;
+    },
+    clearModifier: function(key){
+      if (this.modifiers.includes(key)) this.modifiersSet[key] = false;
+    },
+    isModifier: function(key){
+      return this.modifiers.includes(key);
+    },
+    isSet: function(key){
+      return this.modifiersSet[key];
+    }
+  }
+
+  
+  
+
+  // textmarker
+  let selectionCounter = 0;
+  document.addEventListener('keydown', (e) => {
+    console.log(modifierManager.modifiersSet);
+    if (modifierManager.isModifier(e.key)) modifierManager.toggleModifier(e.key);
+    else{
+      let selection = document.getSelection();
+      if (e.key==="k" && modifierManager.isSet("Meta") &&selection && selection.toString()){
+        if (selection.anchorNode===selection.focusNode&&selection.anchorNode.nodeName==="#text" ){
+          let selectionStart = selection.anchorOffset<selection.focusOffset?selection.anchorOffset:selection.focusOffset;
+          let selectionEnd = selection.anchorOffset>selection.focusOffset?selection.anchorOffset:selection.focusOffset;
+          let beforeSelection = selection.baseNode.textContent .slice(0, selectionStart);
+          let afterSelection = selection.baseNode.textContent .slice(selectionEnd);
+          let replacer = document.createElement("span");
+          replacer.innerHTML = `${beforeSelection}<mark class="selection-added selection-added-${selectionCounter}">${selection.toString()}</mark>${afterSelection}`
+          selectionCounter++;
+          selection.baseNode.replaceWith(replacer);
+        }
+        console.log(selection.toString());
+      }
+    }
+
+  });
+
+  document.addEventListener('keyup', (e) => {
+    if (modifierManager.isModifier(e.key)) modifierManager.clearModifier(e.key);
+  });
 
 })();
