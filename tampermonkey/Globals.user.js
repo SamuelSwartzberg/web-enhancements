@@ -134,22 +134,20 @@ function getSelectionCoords(win) {
   // textmarker
   let selectionCounter = 0;
   document.addEventListener('keydown', (e) => {
-    console.log(modifierManager.modifiersSet);
-    if (modifierManager.isModifier(e.key)) modifierManager.toggleModifier(e.key);
+    if (modifierManager.isModifier(e.key)) modifierManager.toggleModifier(e.key); // handling modifier keys
     else{
       let selection = document.getSelection();
       if (e.key==="k" && modifierManager.isSet("Meta") &&selection && selection.toString()){
         if (selection.anchorNode===selection.focusNode&&selection.anchorNode.nodeName==="#text" ){
           let selectionStart = selection.anchorOffset<selection.focusOffset?selection.anchorOffset:selection.focusOffset;
           let selectionEnd = selection.anchorOffset>selection.focusOffset?selection.anchorOffset:selection.focusOffset;
-          let beforeSelection = selection.baseNode.textContent .slice(0, selectionStart);
-          let afterSelection = selection.baseNode.textContent .slice(selectionEnd);
+          let beforeSelection = selection.baseNode.textContent.slice(0, selectionStart);
+          let afterSelection = selection.baseNode.textContent.slice(selectionEnd);
           let replacer = document.createElement("span");
           replacer.innerHTML = `${beforeSelection}<mark class="selection-added selection-added-${selectionCounter}">${selection.toString()}</mark>${afterSelection}`
           selectionCounter++;
           selection.baseNode.replaceWith(replacer);
         }
-        console.log(selection.toString());
       }
     }
 
