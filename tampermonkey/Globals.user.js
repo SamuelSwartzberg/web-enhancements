@@ -8,6 +8,8 @@
 // @grant        none
 // ==/UserScript==
 
+const BLOCK_LEVEL_ELEMENTS_LIST = "address, article, aside, blockquote, details, dialog, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, li, main, nav, ol, p, pre, section, table, ul";
+
 function getSelectionCoords(win) {
   win = win || window;
   var doc = win.document;
@@ -129,7 +131,18 @@ function getSelectionCoords(win) {
   }
 
   
-  
+  function highlightWordIfCotainedWithinElement(selection){
+    if (selection.anchorNode===selection.focusNode&&selection.anchorNode.nodeName==="#text" ){
+      let selectionStart = selection.anchorOffset<selection.focusOffset?selection.anchorOffset:selection.focusOffset;
+      let selectionEnd = selection.anchorOffset>selection.focusOffset?selection.anchorOffset:selection.focusOffset;
+      let beforeSelection = selection.baseNode.textContent.slice(0, selectionStart);
+      let afterSelection = selection.baseNode.textContent.slice(selectionEnd);
+      let replacer = document.createElement("span");
+      replacer.innerHTML = `${beforeSelection}<mark class="selection-added selection-added-${selectionCounter}">${selection.toString()}</mark>${afterSelection}`
+      selectionCounter++;
+      selection.baseNode.replaceWith(replacer);
+    }
+  }
 
   // textmarker
   let selectionCounter = 0;
@@ -138,16 +151,10 @@ function getSelectionCoords(win) {
     else{
       let selection = document.getSelection();
       if (e.key==="k" && modifierManager.isSet("Meta") &&selection && selection.toString()){
-        if (selection.anchorNode===selection.focusNode&&selection.anchorNode.nodeName==="#text" ){
-          let selectionStart = selection.anchorOffset<selection.focusOffset?selection.anchorOffset:selection.focusOffset;
-          let selectionEnd = selection.anchorOffset>selection.focusOffset?selection.anchorOffset:selection.focusOffset;
-          let beforeSelection = selection.baseNode.textContent.slice(0, selectionStart);
-          let afterSelection = selection.baseNode.textContent.slice(selectionEnd);
-          let replacer = document.createElement("span");
-          replacer.innerHTML = `${beforeSelection}<mark class="selection-added selection-added-${selectionCounter}">${selection.toString()}</mark>${afterSelection}`
-          selectionCounter++;
-          selection.baseNode.replaceWith(replacer);
-        }
+        highlightWordIfCotainedWithinElement(selection)
+      }
+      else if (e.key==="∆" && modifierManager.isSet("Alt") &&selection && selection.toString()){
+        selection.anchorNode.parentNode.closest(BLOCK_LEVEL_ELEMENTS_LIST).style.backgroundColor="yellow";
       }
     }
 
