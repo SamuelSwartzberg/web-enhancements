@@ -47,6 +47,7 @@
     background-color: #f0ffee;
   }
   #iframe-popup {
+    z-index: 2147483647;
     position: absolute;
     top: 200px;
     left: 200px;
