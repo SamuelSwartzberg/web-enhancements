@@ -31,7 +31,7 @@
     content: "☑️";
   }
   /* marks kanshudo articles as completely flashcardified */
-  a[href*="/より"]::before, a[href*="のほうが"]::before, a[href*="というより"]::before, a[href*="例の"]::before, a[href*="ないで済む"]::before, a[href*="/ら?"]::before, a[href*="/たり?"]::before, a[href*="/とか?"]::before, a[href*="/など?"]::before, a[href*="/なんて?"]::before, a[href*="/切る?"]::before, a[href*="/きれない?"]::before, a[href*="/し_form?"]::before, a[href*="/や?"]::before, a[href*="/し?"]::before, a[href*="/の_adjectives?"]::before, a[href*="/adjectives?"]::before, a[href*="/する?"]::before {
+  a[href*="/より"]::before, a[href*="のほうが"]::before, a[href*="というより"]::before, a[href*="例の"]::before, a[href*="ないで済む"]::before, a[href*="/ら?"]::before, a[href*="/たり?"]::before, a[href*="/とか?"]::before, a[href*="/など?"]::before, a[href*="/なんて?"]::before, a[href*="/切る?"]::before, a[href*="/きれない?"]::before, a[href*="/し_form?"]::before, a[href*="/や?"]::before, a[href*="/し?"]::before, a[href*="/の_adjectives?"]::before, a[href*="/adjectives?"]::before, a[href*="/する?"]::before, a[href*="/こそ?"]::before {
     content: "✅";
   }
   a[href*="https://myanimelist.net/anime/32281/Kimi_no_Na_wa"]::before, a[href*="https://myanimelist.net/anime/28851/Koe_no_Katachi"]::before, a[href*="https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso"]::before, a[href*="https://myanimelist.net/anime/10408/Hotarubi_no_Mori_e"]::before, a[href*="https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai"]::before, a[href*="Suzumiya_Haruhi"]::before, a[href*="Kenpuu_Denki_Berserk"]::before, a[href*="Shouwa_Genroku_Rakugo_Shinjuu"]::before, a[href*="Tenki_no_Ko"]::before, a[href*="https://myanimelist.net/anime/5941/Cross_Game"]::before, a[href*="Hibike_Euphonium"]::before, a[href*="Yahari_Ore_no_Seishun_Love_Comedy"]::before, a[href*="Toradora"]::before, a[href*="ReLIFE"]::before, a[href*="Code_Geass"]::before, a[href*="https://myanimelist.net/anime/34636/Ballroom_e_Youkoso"]::before, a[href*="Liz_to_Aoi_Tori"]::before, a[href*="Kimi_no_Suizou_wo_Tabetai"]::before, a[href*="Fullmetal_Alchemist__Brotherhood"]::before, a[href*="Shingeki_no_Kyojin"]::before, a[href*="3-gatsu_no_Lion"]::before, a[href*="Saiki_Kusuo"]::before, a[href*="https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei"]::before, a[href*="Kara_no_Kyoukai"]::before, a[href*="Ookami_to_Koushinryou"]::before, a[href*="Sakamichi_no_Apollon"]::before, a[href*="Bakemonogatari"]::before, a[href*="NHK_ni_Youkoso"]::before, a[href*="Doukyuusei"]::before, a[href*="Given"]::before, a[href*="Nodame_Cantabile"]::before, a[href*="Hachimitsu_to_Clover"]::before, a[href*="Sennen_Joyuu"]::before, a[href*="Little_Busters"]::before {
@@ -55,5 +55,10 @@
     border-radius: 1em;
     box-shadow: 0 1em 3em #0003;
     background-color: white;
+  }
+
+  /* DeepL */
+  .dl_app_popup{
+    display: none !important;
   }
 }
