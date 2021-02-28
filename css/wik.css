@@ -32,6 +32,9 @@
   #p-logo {
     display: none;
   }
+  #p-views{
+    display: block;
+  }
   #toc {
     font-size: 1rem;
     display: block;
