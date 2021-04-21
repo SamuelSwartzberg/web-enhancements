@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Wik feature supplement
-// @namespace    http://tampermonkey.net/
+// @namespace    samswartzberg.com
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @include      https://en.wik*.org/wiki/*
+// @include      https://en.wik*.org/*
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
@@ -12,6 +12,11 @@
 let wordClassList = ["Noun", "Adjective", "Verb", "Counter", "Suffix", "Particle" ];
 let wordInfoList = ["Synonyms", "Antonyms", "Derived_terms", "Related_terms", "Translations"];
 let wordParallelList = ["Etymology", "Pronunciation", "Further_reading", "Anagrams"];
+
+window.pViewHtml = document.querySelector("#p-views").innerHTML;
+function restorePViewsFromWikiScriptDeletion(){
+  window.setTimeout(()=> document.querySelector("#p-views").innerHTML = window.pViewHtml, 1000)
+}
 
 function getCollisionNodeOrHigher(colisionNode) {
   console.log(colisionNode);
@@ -63,6 +68,8 @@ function sectionify(){
 
 (function () {
   'use strict';
+  restorePViewsFromWikiScriptDeletion();
+  window.setInterval(restorePViewsFromWikiScriptDeletion, 3000)
   sectionify();
  
   // hide transcriptions 
