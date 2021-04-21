@@ -96,7 +96,7 @@
     position: absolute;
     right: 0.25em;
     margin-top: 0.25em;
-    font-family: Garamond;
+    font-family: "Source Serif Pro", Garamond, Georgia, sans-serif;
     font-size: 4em;
     line-height: 1;
     color: #0003;
@@ -132,7 +132,7 @@
     display: none;
   }
   .word-container>p:first-of-type>.headword {
-    font-family: Garmaond;
+    font-family: "Source Serif Pro", Garamond, Georgia, sans-serif;
     font-size: 1.5rem;
     color: #000a;
   }
@@ -166,7 +166,7 @@
   }
   .sister-wikipedia>div div a::before {
     content: "W";
-    font-family: Garamond;
+    font-family: "Source Serif Pro", Garamond, Georgia, sans-serif;
     font-size: 2.5rem;
     background-color: white;
     color: #000a;
